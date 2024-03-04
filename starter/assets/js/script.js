@@ -6,8 +6,9 @@
 // Also need to create the highscores from the the score of the past 8 questions and have a ranking system
 
 // need to use get element to use the html elemnts in js
-// Then ill need functions for the questions with iff state ments to check if the answer is right 
+// Then ill need functions for the questions with iff state ments to check if the answer is right
 
+//Array of questions with answers 
 const questions = [
   {
       question: "Choose the correct HTML element for the largest heading?",
@@ -50,6 +51,13 @@ const questions = [
       answer: 2,
   },
 ];
+// For loop to shufle the array of questions
+for (let i = 0; i < questions.length; i++) {
+    let j = Math.floor(Math.random() * questions.length);
+    let temp = questions[i];
+    questions[i] = questions[j];
+    questions[j] = temp;
+}
 
 let startBttn = document.getElementById("start");
 let timerDisplay = document.getElementById("time");
