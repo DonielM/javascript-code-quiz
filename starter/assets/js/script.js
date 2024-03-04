@@ -136,3 +136,13 @@ function checkAnswer(e) {
     }
 }
 
+// End the quiz and display the final score 
+function endQuiz() {
+    clearInterval(timerInterval);
+    quizQuestions.classList.add('hide');
+    endScreen.classList.remove('hide');
+    finalScore.textContent = score;
+}
+
+// Event listeners to start button
+startbttn.addEventListener('click', startQuiz);
