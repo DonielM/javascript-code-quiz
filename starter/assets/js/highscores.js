@@ -44,7 +44,7 @@ function displayHighScores() {
 // Clears highscores giving you the option to save memory or if you just want the option to remove scores.
 function clearScores() {
     localStorage.removeItem("highScores");
-    displayHighScores(); // Update highscores display after clearing
+    displayHighScores();
 }
 
 //Disaplay highscores when the page loads up to a limit of 10 scores shown

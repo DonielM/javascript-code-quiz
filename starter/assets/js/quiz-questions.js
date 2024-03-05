@@ -15,6 +15,11 @@ const questions = [
     answer: 1,
   },
   {
+    question: "How do you access the third element of an array named arr?",
+    choices: ["arr[2]", "arr[3]", "arr.third", "arr.getElement(3)"],
+    answer: 0,
+  },
+  {
     question: "How to write an IF statement in JavaScript?",
     choices: ["if i = 5", "if i == 5 then", "if i = 5 then", "if (i == 5)"],
     answer: 3,
