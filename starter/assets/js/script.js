@@ -112,7 +112,7 @@ function saveScore() {
     highScores.pop();
   }
   localStorage.setItem("highScores", JSON.stringify(highScores));
-  window.location.href = "highscores.html";
+  window.location.href = `highscores.html`;
 }
 
 // Event listeners to start button
