@@ -13,3 +13,12 @@ function displayHighScores() {
       .join('');
 }
 
+// This Function clears highscores giving you the option to save memory or if you just want the option to remove scores.
+function clearScores() {
+    if (confirm('Are you sure you want to clear the current high scores?')) {
+        window.localStorage.removeItem('highScores');
+        window.location.reload();
+    }
+}
+document.getElementById('clear').onclick = clearScores;
+displayHighScores();
