@@ -21,7 +21,7 @@ Create a code quiz that contains the following requirements:
 ## App Gif
 
 Here is a gif of the delpoyed app
-![Alt Text](./assets/2024-03-0521-36-02-ezgif.com-video-to-gif-converter.gif)
+![Alt Text](./starter/assets/images/2024-03-0521-36-02-ezgif.com-video-to-gif-converter.gif)
 
 ## Github Repo
 https://github.com/DonielM/javascript-code-quiz
