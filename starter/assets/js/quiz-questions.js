@@ -56,7 +56,7 @@ const questions = [
     answer: 2,
   },
 ];
-// For loop to shufle the array of questions
+//For loop to shufle the array of questions
 for (let i = 0; i < questions.length; i++) {
   let j = Math.floor(Math.random() * questions.length);
   let temp = questions[i];
