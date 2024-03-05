@@ -17,8 +17,8 @@ let timeLeft = 120;
 let score = 0;
 let timerInterval;
 
-let audioCorrect = new Audio("assets/sfx/correct.wav");
-let audioIncorrect = new Audio("assets/sfx/incorrect.wav");
+let audioCorrect = new Audio("starter/assets/sfx/correct.wav");
+let audioIncorrect = new Audio("starter/assets/sfx/incorrect.wav");
 
 //Starts the quiz and displays the first question
 function startQuiz() {
