@@ -152,5 +152,30 @@ function endQuiz() {
     finalScore.textContent = score;
 }
 
+//Saves the score to the local storage and moves it to the high scores page
+// Deletes the last high scores if there are more than 10 high scores in local storage to stop excess memmory usage.
+function saveScore() {
+    const initials = initialsInput.value;
+    if (initials === '') {
+        alert('Please enter your initials.');
+        return;
+    }
+    const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
+    const newScore = {
+        initials: initials,
+        score: score,
+    };
+    highScores.push(newScore);
+    highScores.sort(function (a, b) {
+        return b.score - a.score;
+    });
+    if (highScores.length > 10) {
+        highScores.pop();
+    }
+    localStorage.setItem('highScores', JSON.stringify(highScores));
+    window.location.href = 'highscores.html';
+} 
+
 // Event listeners to start button
-startbttn.addEventListener('click', startQuiz);
+startBttn.addEventListener('click', startQuiz);
+submitBttn.addEventListener('click', saveScore);
